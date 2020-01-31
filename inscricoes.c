@@ -122,5 +122,9 @@ char * pega_data(char * texto_linha) {
     strcat(data, ano);
     strcat(data, "\0");
 
+    free(dia);
+    free(mes);
+    free(ano);
+
     return data;
 }
